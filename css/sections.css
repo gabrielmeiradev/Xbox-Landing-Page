@@ -1,0 +1,184 @@
+/* Global */
+
+.title{
+    font-size: 2rem;
+}
+
+.title strong{
+    color: var(--primary);
+}
+
+
+/* CTA */
+
+#cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../image/cta-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cta-title{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.cta-sub{
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.cta-img-container{
+    text-align: center;
+}
+
+.cta-img-container img{
+    max-width: 700px;
+    width: 70%;
+    min-width: 327px;
+}
+
+/* Desempenho */
+
+#desempenho{
+    padding: var(--main-padding);
+    display: flex;
+    align-items: center;
+}
+
+#desempenho .desc{
+    line-height: 40.8px;
+    font-size: 24px;
+    color: var(--gray-light);
+}
+
+#desempenho .left, #desempenho .right{
+    width: 50%;
+}
+
+#desempenho .right{
+    text-align: center;
+}
+
+.img-controle{
+    width: 70%;
+}
+
+@media screen and (max-width: 720px){
+    #desempenho{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #desempenho .left, #desempenho .right{
+        width: 100%;
+    }
+
+    #game-cards{
+        flex-direction: column;
+    }
+
+    .game-card{
+        flex: inherit;
+    }
+    
+    footer .right{
+        flex-direction: column;
+        gap: 10px !important;
+    }
+}
+
+/* Games cards */
+
+#game-cards{
+    display: flex;
+}
+
+.game-card{
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-card img{
+    height: 50px;
+}
+
+.game-card.farcry{
+    background-image: url(../image/farcry-bg.png);
+}
+.game-card.forza{
+    background-image: url(../image/forza-bg.png);
+}
+.game-card.fifa{
+    background-image: url(../image/fifa-bg.png);
+}
+.game-card.minecraft{
+    background-image: url(../image/minecraft-bg.png);
+}
+
+/* FAQ */
+
+#faq{
+    padding: var(--main-padding);
+}
+
+.question-area{
+    padding: 5px 0;
+    border-bottom: 2px solid #2E2E2E;
+    overflow: hidden;
+}
+
+.question-area .answer{
+    height: 0;
+    transition: height .5s;
+}
+
+
+.question-area .question h2{
+    font-weight: 500;
+    padding: 5px 0;
+    
+    cursor: pointer;
+    margin: 0;
+}
+
+.answer{
+    padding: 5px 20px;
+    box-sizing: border-box;
+    color: var(--gray-light);
+    font-size: 1.2rem;
+    height: 0;
+}
+
+footer{
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .right{
+    display: flex;
+    gap: 26px;
+    align-items: flex-end;
+    text-align: end;
+}
+
+footer .right a{
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.footer-logo{
+    width: 100px;
+}

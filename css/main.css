@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #09090B;
+    font-family: 'Inter', sans-serif;
+    color: var(--light)
+}
+
+:root{
+    --primary: #9BF00B;
+    --dark: #0C0C0C;
+    --gray: #777777;
+    --gray-light: #C0C0C0;
+    --light: #FFFFFF;
+    --main-padding: 56px 120px;
+}
+
+@media screen and (max-width: 720px) {
+    :root{
+        --main-padding: 21px 32px; 
+    }
+}
